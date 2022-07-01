@@ -3,13 +3,16 @@ from base_camera import BaseCamera
 import time
 import argparse 
 
-ap = argparse.ArgumentParser()
-ap.add_argument('--video', help='path to video')
-args = vars(ap.parse_args())
-video_source = args['video']
+# ap = argparse.ArgumentParser()
+# ap.add_argument('--video', help='path to video')
+# args = vars(ap.parse_args())
+# video_source = args['video']
 
-if video_source == 'web-cam':
-    video_source = 0
+# if video_source == 'web-cam':
+#     video_source = 0
+
+# Added by Eden as default - no arg necessary
+video_source = 0
 
 class Camera(BaseCamera):
 
