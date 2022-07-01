@@ -4,7 +4,7 @@ Display opencv video on your flask app.
 ## Deploy Flask App Locally
 `python fancy_app.py`
 
-![from-video](https://github.com/ashish10alex/flask-opencv/blob/master/images/webcam.gif)
+![from-video](https://github.com/ashish10alex/flask-opencv/blob/master/images/webcam_new.mp4)
 
 __Dependencies__ -
 
