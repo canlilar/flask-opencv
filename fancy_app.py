@@ -28,11 +28,11 @@ def test_feed():
     return render_template('full-page-carousel.html')
 
 
-@app.route('/video_feed')
-def video_feed():
-    """Video streaming route. Put this in the src attribute of an img tag."""
-    return Response(gen(Camera()),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
+# @app.route('/video_feed')
+# def video_feed():
+#     """Video streaming route. Put this in the src attribute of an img tag."""
+#     return Response(gen(Camera()),
+#                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 if __name__ == '__main__':
