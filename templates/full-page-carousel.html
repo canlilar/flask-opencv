@@ -177,10 +177,17 @@
       <div class="carousel-inner">
         <!-- Single item -->
         <div class="carousel-item active">
-          <img 
+          <!-- <img 
                 src="{{ url_for('video_feed') }}" 
                 style="min-width: 100%; min-height: 100%"
-                >
+                > -->
+            <video 
+                autoplay 
+                playsinline 
+                muted 
+                id="webcam" 
+                style="min-width: 100%; min-height: 100%">
+            </video>
           <!-- <video
                 style="min-width: 100%; min-height: 100%"
                 playsinline
@@ -198,27 +205,29 @@
             <div
                 class="d-flex justify-content-center align-items-center h-100"
                 >
-              <!-- <div class="text-white text-center">
-                <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+              <div class="text-white text-center">
+                <h1 class="mb-3">Hello World!</h1>
                 <h5 class="mb-4">
-                  Best & free guide of responsive web design
+                  Click the button below to get started!
                 </h5>
                 <a
                   class="btn btn-outline-light btn-lg m-2"
-                  href="https://www.youtube.com/watch?v=c9B4TPnak1A"
                   role="button"
                   rel="nofollow"
                   target="_blank"
-                  >Start tutorial</a
+                  id="startPredicting" 
+                  onclick="startPredicting()" 
+                  >Access Webcam</a
                   >
                 <a
                   class="btn btn-outline-light btn-lg m-2"
-                  href="https://mdbootstrap.com/docs/standard/"
+                  id="stopPredicting"
+                  onclick="stopPredicting()"
                   target="_blank"
                   role="button"
-                  >Download MDB UI KIT</a
+                  >Turn Webcam Off</a
                   >
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -652,6 +661,8 @@
   <script type="text/javascript" src="static/js/mdb.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript"></script>
+  <script src= "camera.js"></script>
+  <script src= "camera copy.js"></script>
 </body>
 
 </html>
