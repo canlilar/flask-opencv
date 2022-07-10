@@ -7,3 +7,5 @@ google-cloud-datastore==2.1.0
 imutils==0.5.4
 # scikit-image==0.19.3
 scikit-image==0.17.1
+#testing this one
+flask_socketio

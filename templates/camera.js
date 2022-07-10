@@ -16,7 +16,7 @@ function stopPredicting(){
 
 
 
-async function app(){
+async function camera(){
 	// console.log('Loading model..');
 	// net= await tf.automl.loadImageClassification('model.json');
 	// console.log('Successfully loaded model');
